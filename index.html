@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Game</title>
+    <style>
+   *
+{   
+    margin: 0;
+    padding: 0;
+}
+html,
+body
+{
+    height: 100vh;
+    font-family: 'Poppins';
+    
+}
+.webgl
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    outline: none;
+    mix-blend-mode: exclusion;
+}
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+h1{
+   color: aqua;
+   z-index: 2;
+}
+
+    </style>
+</head>
+<body>
+   <canvas class="webgl"></canvas> 
+   <script  src="js/three.js"></script>
+   <script type="module" src="index.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/three@0.122.0/examples/js/controls/OrbitControls.min.js"></script>
+</body>
+</html>
